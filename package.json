@@ -7,7 +7,8 @@
     "build": "npm install",
     "start": "pm2 start index.js --deep-monitoring --attach --name DANUWA-MD",
     "stop": "pm2 stop DANUWA-MD",
-    "restart": "pm2 restart DANUWA-MD"
+    "restart": "pm2 restart DANUWA-MD",
+    "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || yarn add --ignore-engines sharp@0.33.5"
   },
     "engines": {
     "node": ">=20.0.0"
