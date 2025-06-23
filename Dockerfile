@@ -1,17 +1,12 @@
-# Use Node.js LTS
 FROM node:20
 
-# Set working directory
 WORKDIR /app
 
-# Copy files
 COPY . .
 
-# Install dependencies
-RUN npm install
+# Install dependencies AND pm2 globally
+RUN npm install && npm install -g pm2
 
-# Expose port (if needed by express or keep-alive)
 EXPOSE 3000
 
-# Start the bot
 CMD ["pm2-runtime", "index.js"]
