@@ -4,6 +4,8 @@
   "description": "A Powerfull Whatsapp Bot",
   "main": "index.js",
   "scripts": {
+    "build": "npm install",
+    "start": "node index.js"
     "start": "pm2 start index.js --deep-monitoring --attach --name DANUWA-MD",
     "stop": "pm2 stop DANUWA-MD",
     "restart": "pm2 restart DANUWA-MD"
