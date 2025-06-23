@@ -1,16 +1,15 @@
 {
-  "name": "DANUWA-MD",
+  "name": "lussh-md",
   "version": "1.0.0",
-  "description": "A Powerfull Whatsapp Bot",
+  "description": "A Powerful WhatsApp Bot by Lussh",
   "main": "index.js",
   "scripts": {
     "build": "npm install",
-    "start": "pm2 start index.js --deep-monitoring --attach --name DANUWA-MD",
-    "stop": "pm2 stop DANUWA-MD",
-    "restart": "pm2 restart DANUWA-MD",
-    "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || yarn add --ignore-engines sharp@0.33.5"
+    "start": "pm2 start index.js --deep-monitoring --attach --name lussh-md",
+    "stop": "pm2 stop lussh-md",
+    "restart": "pm2 restart lussh-md"
   },
-    "engines": {
+  "engines": {
     "node": ">=20.0.0"
   },
   "dependencies": {
@@ -73,7 +72,7 @@
     "@sl-code-lords/movie-dl": "^1.1.1",
     "@mrnima/tiktok-downloader": "^1.0.0",
     "ruhend-scraper": "^9.0.1"
-      },
+  },
   "resolutions": {
     "libsignal-node": "https://github.com/adiwajshing/libsignal-node"
   }
