@@ -19,6 +19,7 @@ const defaultConfig = {
   GEMINI_API_KEY: "", // Add Gemini API key here
   REMOVE_BG_API_KEY:"", // Add removebg API key here
   WEATHER_API_KEY: "", // Add your weather API key here
+  GROQ_API_KEY: "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", // Groq API key 
   BOT_OWNER: "2338111637463", // Replace your bot owner number here with 94(country code)
   ownerNumber: ["2348111637463"], // Replace your bot owner number here (same as bot owner number)
   AUTO_STATUS_REACT: "true",
